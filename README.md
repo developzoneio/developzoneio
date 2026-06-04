@@ -17,17 +17,31 @@
 
 ### Featured
 
-**[ck-spec-system](https://github.com/developzoneio/ck-spec-system)** — Spec-driven development workflows for Claude Code
+**[SpecWright](https://github.com/developzoneio/specwright)** — Spec-driven development for AI coding agents
 
-> 9 slash commands · 5 specialized subagents · 3 cross-platform hooks · 9 templates
->
-> Enforces spec-first discipline: every feature, bug fix, refactor, and performance optimization starts with a written spec and hard approval gates before any code is written.
+Transform AI-assisted development from:
 
-```
-/ck:feature   /ck:bug   /ck:refactor   /ck:perf   /ck:rca
-/ck:spec      /ck:explore   /ck:review   /ck:setup
+```text
+Prompt → Code
 ```
 
+into:
+
+```text
+Specification → Approval → Implementation → Review
+```
+
+* 9 slash commands
+* 5 specialized subagents
+* 3 guard-rail hooks
+* 9 templates
+* 5 reusable skills
+* Durable project memory under `.specs/`
+
+```text
+/sd:feature   /sd:bug      /sd:refactor   /sd:perf      /sd:rca
+/sd:spec      /sd:explore  /sd:review     /sd:setup
+```
 ---
 
 ### What I build
@@ -58,4 +72,4 @@ Dependency rule always points inward. Business logic never touches databases or 
 
 ---
 
-<sub>Built with spec-first discipline · <a href="https://github.com/developzoneio/ck-spec-system">ck-spec-system</a></sub>
+<sub>Built with spec-first discipline · <a href="https://github.com/developzoneio/specwright">specwright</a></sub>
