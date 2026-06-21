@@ -31,16 +31,16 @@ into:
 Specification → Approval → Implementation → Review
 ```
 
-* 9 slash commands
-* 5 specialized subagents
+* 11 slash commands
+* 6 specialized subagents
 * 3 guard-rail hooks
 * 9 templates
-* 5 reusable skills
+* 6 reusable skills
 * Durable project memory under `.specs/`
 
 ```text
 /sd:feature   /sd:bug      /sd:refactor   /sd:perf      /sd:rca
-/sd:spec      /sd:explore  /sd:review     /sd:setup
+/sd:spec      /sd:explore  /sd:review     /sd:setup     /sd:release   /sd:adr
 ```
 ---
 
