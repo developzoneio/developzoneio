@@ -1,6 +1,6 @@
 # Trong Tran (developzoneio)
 
-> Fullstack .NET developer — building spec-driven AI workflows · [trialtap.dev](https://trialtap.dev)
+> Fullstack .NET developer — building spec-driven AI workflows · [developzone.dev](https://developzone.dev)
 
 ---
 
@@ -66,7 +66,7 @@ Dependency rule always points inward. Business logic never touches databases or 
 
 ### Connect
 
-- Website: [trialtap.dev](https://trialtap.dev)
+- Website: [developzone.dev](https://developzone.dev)
 - GitHub: [@developzoneio](https://github.com/developzoneio)
 - Tooling: Claude Code + MCP (Atlassian, Context7, GitNexus, Sequential Thinking)
 
