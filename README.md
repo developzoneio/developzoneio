@@ -55,6 +55,48 @@ Next on the roadmap: Codex support · GitHub Issue auto-fetch
 
 ---
 
+### Other projects
+
+**[.NET Migration Assessor](https://github.com/developzoneio/dotnet-migration-assessor)** — Ranked, explained migration plan from .NET Framework / .NET 8 to .NET 10
+
+![Status: pre-alpha](https://img.shields.io/badge/status-pre--alpha-orange?style=flat-square)
+![.NET 10](https://img.shields.io/badge/target-.NET%2010-512BD4?style=flat-square)
+![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue?style=flat-square)
+
+```text
+your .sln  →  Roslyn code graph · facts  →  LLM · reasoning  →  ranked migration plan
+```
+
+* Facts before reasoning — every recommendation traces back to a concrete fact in the code
+* Code stays local by default — only structured findings go to the model
+* Leaf-first migration order, per-project blockers, effort & risk estimate
+* Clean Architecture, pluggable `IMigrationReasoner`, Markdown + JSON reports
+* Planned as a `dotnet` global tool: `dotnet assess ./MySolution.sln`
+
+**[GitSwitch](https://github.com/developzoneio/GitSwitch)** — Switch Git identities (user, email, SSH key) in one command
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)
+
+* `gsw add` / `gsw switch` profiles per repo — SSH or HTTPS, remote URLs converted automatically
+* Manages one isolated block in `~/.ssh/config`, leaves the rest untouched
+* Repo pattern matching + shell hook auto-detection (Bash, Zsh, PowerShell, Fish)
+
+**[Claude Code Statusline for Windows](https://github.com/developzoneio/claude-code-statusline-windows)** — Native PowerShell statusline for Claude Code
+
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)
+
+```text
+admin@MY-PC D:/projects/my-app | Sonnet | Context: 25% | 5h: 50% | Weekly: 70%
+```
+
+* Model, context usage, working directory and 5h / weekly rate limits
+* No `jq`, no dependencies — PowerShell parses the JSON natively
+
+---
+
 ### What I build
 
 - Backend APIs & microservices on ASP.NET Core with CQRS + Clean Architecture
