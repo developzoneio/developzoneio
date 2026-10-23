@@ -17,7 +17,13 @@
 
 ### Featured
 
-**[SpecWright](https://github.com/developzoneio/specwright)** — Spec-driven development for AI coding agents
+**[specwright](https://github.com/developzoneio/specwright)** — Spec-driven development for AI coding agents
+
+[![Release](https://img.shields.io/github/v/release/developzoneio/specwright?style=flat-square)](https://github.com/developzoneio/specwright/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/developzoneio/specwright/blob/main/LICENSE)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey?style=flat-square)
+
+> **Claude Code cannot touch your code until a spec is approved.**
 
 Transform AI-assisted development from:
 
@@ -31,17 +37,22 @@ into:
 Specification → Approval → Implementation → Review
 ```
 
-* 11 slash commands
-* 6 specialized subagents
-* 3 guard-rail hooks
-* 9 templates
-* 6 reusable skills
+* 14 slash commands — 6 spec-producing workflows + 8 utilities
+* 6 specialized subagents with minimal tool allowlists (the reviewer has no write tools)
+* 7 cross-platform guard-rail hooks — `spec-gate` denies `Edit` / `Write` at the tool layer until a spec is approved
+* 10 templates
+* 11 reusable skills
 * Durable project memory under `.specs/`
+* Stack-agnostic (.NET, Node, Python, Go, Rust) · Windows / macOS / Linux
 
 ```text
-/sd:feature   /sd:bug      /sd:refactor   /sd:perf      /sd:rca
+/sd:feature   /sd:bug      /sd:refactor   /sd:perf      /sd:rca       /sd:port
 /sd:spec      /sd:explore  /sd:review     /sd:setup     /sd:release   /sd:adr
+/sd:verify    /sd:status
 ```
+
+Next on the roadmap: Codex support · GitHub Issue auto-fetch
+
 ---
 
 ### What I build
